@@ -18,25 +18,25 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2"　for="name">name</label>
+                        <label class="col-md-2"　for="name">氏名</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="name" value="{{ $profiles_form->name }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="gender">gender</label>
+                        <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="gender" value="{{ $profiles_form->gender }}" >
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="hobby">hobby</label>
+                        <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="hobby" value="{{ $profiles_form->hobby }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="introduction">introduction</label>
+                        <label class="col-md-2" for="introduction">自己紹介欄</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="introduction" rows="20">{{ $profiles_form->introduction }}</textarea>
                         </div>
