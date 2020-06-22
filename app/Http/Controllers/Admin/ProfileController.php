@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 
 use App\Profile;
 
-use App\ProfilesHistory;
+use App\ProfileHistory;
 
 use Carbon\Carbon;
 
@@ -50,12 +50,12 @@ class ProfileController extends Controller
         
         $profiles->fill($profiles_form)->save();
         
-        $history = new ProfilesHistory;
-        $history->profiles_id = $profiles->id;
+        $history = new ProfileHistory;
+        $history->profile_id = $profiles->id;
         $history->edited_at = Carbon::now();
         $history->save();
 
         
-        return redirect('admin/profile/edit');
+        return redirect('admin/profile/edit?id=' . $profiles->id);
     }
 }
