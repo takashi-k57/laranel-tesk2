@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\News;
 use App\History;
 use Carbon\Carbon;
+use Storage;
 class NewsController extends Controller
 {
     //
